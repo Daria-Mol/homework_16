@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 16 Daria Mol</title>
+
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="main">
+				<section class="main__my my"> 
+					<div class="my__container">
+						<form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="my__form form">
+							<h2 class="form__title">Давайте знайомитись:)</h2>
+							<div class="form__line">
+								<label for="name" class="form__label">Як тебе звати?</label>
+								<input id="name" required autocomplete="on" type="text" name="name" placeholder="Твоє ім'я" class="form__input">
+							</div>
+							<div class="form__line">
+								<label for="mail" class="form__label">Залиш свій email)</label>
+								<input id="mail" required autocomplete="on" type="text" name="email" placeholder="Твоя електронна скринька" class="form__input">
+							</div>
+							<div class="form__line">
+								<label for="pass" class="form__label">Придумай собі пароль.</label>
+								<input id="pass" required type="password" name="password" placeholder="Введи пароль" class="form__input">
+							</div>
+							<div class="form__line check">
+									<h3 class="form__subtitle">Обери, що тобі подобається?</h3>
+									<div class="form__check">
+										<input id="dron"  type="checkbox" tabindex="1" name="dron" class="form__checkbox">
+										<label for="dron" class="form__label">Збивати шахідів із вікна</label>
+									</div>
+									<div class="form__check">
+										<input id="donat" type="checkbox" tabindex="2" name="donat" class="form__checkbox">
+										<label for="donat" class="form__label">Донатити на ЗСУ</label>
+									</div>
+									<div class="form__check">
+										<input id="zheka" checked type="checkbox" tabindex="3" name="zheka" class="form__checkbox">
+										<label for="zheka" class="form__label">Дивитись стріми Жеки</label>
+									</div>
+									<div class="form__check">
+										<input id="candela" type="checkbox" tabindex="4" name="candela" class="form__checkbox">
+										<label for="candela" class="form__label">Pобити свічки, бо це зараз вигідний бізнес.</label>
+									</div>
+							</div>
+							<div class="form__line">
+								<label for="tel" class="form__label">Якщо хочеш, залиш номер телефону.</label>
+								<input id="tel" type="tel" name="tel" placeholder="Твій номер телефону" class="form__input">
+							</div>
+							<div class="form__line">
+								<label for="num" class="form__label">Просто можеш погратись із цим полем</label>
+								<input id="num" type="number" name="number" placeholder="Твоя цифра ...." class="form__input">
+							</div>
+							<div class="form__line">
+								<label for="color" class="form__label">Обери улюблений колір.</label>
+								<input id="color"  type="color" name="color" value="#7409ee" class="form__input">
+							</div>
+							<div class="form__line">
+								<label for="date" class="form__label">Обери важливу для тебе дату</label>
+								<input id="date" required type="date" name="date"  class="form__input">
+							</div>
+							<div class="form__line">
+								<label for="why" class="form__label">І чому ця дата для тебе важлива?</label>
+								<textarea name="why" id="why" class="form__area" ></textarea>
+							</div>
+							<div class="form__line radio-box">
+								<h3 class="form__subtitle">Обери щось одне.</h3>
+								<div class="form__radio radio">
+									<div class="radio__line">
+										<input  type="radio" name="ukraine" id="loveukr"  value="love" class="radio__input-radio">
+										<label for="loveukr" class="radio__label"><span class="radio__text">Я люблю Укріїну</span></label>
+									</div>
+								</div>
+								<div class="form__radio radio">
+									<div class="radio__line">
+										<input type="radio" checked name="ukraine" id="adoreukr" value="adore" class="radio__input-radio" >
+										<label for="adoreukr" class="radio__label"><span class="radio__text">Я обожнюю Укріїну</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="form__line">
+								<label for="file" class="form__label">Обери зі списку улублену тварину</label>
+								<select name="list" id="list" class="form__list">
+									<option value="">Кіт</option>
+									<option value="">Собака</option>
+									<option value="">Рибки</option>
+									<option value="">Папуга</option>
+									<option value="">Дельфін</option>
+									<option value="" selected>Коала</option>
+									<option value="">Панда</option>
+								</select>
+							</div>
+							<div class="form__line">
+								<label for="file" class="form__label">Відправ мені,що хочеш.</label>
+								<input id="file" type="file" multiple accept="image/png, image/jpg" name="date"  class="form__input">
+							</div>
+							<div class="form__buttons">
+								<div class="form__line">
+									<button class="form__btn" type="button"> Я просто кнопка</button>
+								</div>
+								<div class="form__line">
+									<button class="form__btn" type="reset">Стерти все</button>
+								</div>
+								<div class="form__line">
+									<button class="form__btn" type="submit"> Відправити форму</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+			<section class="main__deberes deberes">
+				<div class="deberes__container">
+					<div class="deberes__image">
+						<img src="img/woman.png" alt="woman">
+					</div>
+					<div class="deberes__content">
+						<div class="deberes__label label">
+							<h3 class="label__subtitle">Any questions?</h3>
+							<h2 class="label__title">Drop us a line</h2>
+						</div>
+						<form action="https://jsonplaceholder.typicode.com/posts" method="post" class="deberes__form form2">
+							<div class="form2__line">
+								<label for="name2" class="form2__label">First Name*</label>
+								<input type="text" name="name" id="name2" required placeholder="Your first name" class="form2__input">
+							</div>
+							<div class="form2__line">
+								<label for="lastname" class="form2__label">Last Name*</label>
+								<input type="text" name="lastname" id="lastname" required placeholder="Your last name" class="form2__input">
+							</div>
+							<div class="form2__line">
+								<label for="mail2" class="form2__label">Email*</label>
+								<input type="email" name="email" id="mail2" required placeholder="Your working email" class="form2__input">
+							</div>
+							<div class="form2__line">
+								<label for="phone" class="form2__label">Phone</label>
+								<input type="tel" name="phone" id="phone" placeholder="Your phone number" class="form2__input">
+							</div>
+							<div class="form2__line form2__line--textarea">
+								<label for="message" class="form2__area">Message*</label>
+								<textarea name="message" required class="form2__message" placeholder="Your message" id="message"></textarea>
+							</div>
+							<div class="form2__line">
+								<div class="form2__checkbox checkbox">
+									<input type="checkbox" required name="agree" id="check" class="checkbox__input">
+									<label for="check"  class="checkbox__label"><span class="checkbox__text">I agree to receive communications from Createx Online School</span></label>
+								</div>
+							</div>
+							<div class="form2__line">
+								<button class="form2__send-btn" type="submit">Send message</button>
+							</div>
+							
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<p class="footer__year">2022</p>
+				<p class="footer__by">@byDariaMol</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
